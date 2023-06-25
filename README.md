@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+This is to configure firebase db on your project;
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It includes the CRUD methods;
 
-## Available Scripts
 
-In the project directory, you can run:
+#some notes on react:
 
-### `npm start`
+# npx create-react-app <directory-name>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React.Fragment =  whicch help us to rapo rap react components without the usage of unwanted DOM element;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+createContext(initialValue) = a hook used to create a global state to pass down to its child nodes, which are wrapped with in a provider (API);
 
-### `npm test`
+useState(initialState) = a hook used to store values and change dynamically in the DOM || it takes a initial state value and return us with current state and a function to update the current state. It came out as an array we need to Destucture it ;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+useContext(contextName) = is used to get the context that created using createContext, it collect the datas from the nearby provider;
 
-### `npm run build`
+useEffect(()=>{ return() },[dependency-values]) = used to give side effects while mounting, updating and unmounting of component;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React.StrictMode = reason for using strict mode is to detect bugs while in development mode;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# npm install react-router-dom 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+usenavigate('/route') = which help us to navigate easily among pages;
 
-### `npm run eject`
+-------------------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#some notes on firebase
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# npm install firebase
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+firebase/compat/auth = it is used to authenticate the users in the database and handle data in the local storage;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+firebase/compat/storage = it is to store solid file datas like image and which return us with a url of the file;
